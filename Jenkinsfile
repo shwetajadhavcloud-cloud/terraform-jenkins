@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     environment {
-        AWS_ACCESS_KEY_ID     = credentials('AKIAZPJPKU3FJ3TAYW3X')
-        AWS_SECRET_ACCESS_KEY = credentials('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')
+        AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
+        AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
     }
-
     stages {
 
         stage('Git Clone') {
