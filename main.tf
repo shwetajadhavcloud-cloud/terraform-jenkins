@@ -4,7 +4,7 @@ resource "aws_instance" "jenkins_ec2" {
   key_name      = var.key_name
 
   tags = {
-    Name = "Terraform-jenkins"
+    Name = "Terraform-jenkins-ec2"
     Env  = "Dev"
   }
 }
